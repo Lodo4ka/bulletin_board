@@ -30,4 +30,18 @@
 # available at https://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  admin: Admin
+  categories: All categories
+  archived: Archived
+  draft: Draft
+  title:
+    title_head: Bulletin board
+    title_main: Bulletins
+  home: Home
+  back: Back
+  language_error: This language is not supported. The default language is used.
+  published: Published
+  search: Search
+  rejected: Reject
+  reset: Reset
+  under_moderation: Under Moderation

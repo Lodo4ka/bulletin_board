@@ -77,3 +77,9 @@ group :test do
   gem "selenium-webdriver"
   gem "webdrivers"
 end
+
+gem "ruby-lsp", "~> 0.3.2", :group => :development
+gem "slim-rails"
+
+gem "importmap-rails", "~> 1.1"
+gem 'bootstrap', '~> 5.1.3'

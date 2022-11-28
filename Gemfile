@@ -30,8 +30,10 @@ gem "cssbundling-rails"
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem "jbuilder"
 
+gem 'devise'
 gem 'omniauth'
-gem "omniauth-rails_csrf_protection"
+gem 'omniauth-google-oauth2'
+gem "omniauth-rails_csrf_protection", "~> 1.0"
 gem 'omniauth-github', github: 'omniauth/omniauth-github', branch: 'master'
 
 # Use Redis adapter to run Action Cable in production

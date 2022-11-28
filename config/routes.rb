@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
+  devise_for :users, controllers: {
+    omniauth_callbacks: 'users/omniauth_callbacks',
+    sessions: 'users/sessions',
+    registrations: 'users/registrations'
+  }
+  root 'pages#home'
   # get 'sessions/create'
   # get 'sessions/new'
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
@@ -7,9 +13,4 @@ Rails.application.routes.draw do
   # root "articles#index"
   # get 'auth/:provider/callback', to: 'sessions#create'
   # get '/login', to: 'sessions#new'
-  scope module: :web do
-    post 'auth/:provider', to: 'auth#request', as: :auth_request
-    get 'auth/:provider/callback', to: 'auth#callback', as: :auth_callback
-
-  end
 end
